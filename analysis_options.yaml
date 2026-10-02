@@ -1,0 +1,13 @@
+include: package:flutter_lints/flutter.yaml
+
+analyzer:
+  exclude:
+    - build/**
+    - android/**
+    - ios/**
+    - web/**
+    - windows/**
+  errors:
+    # Floor marks `TypeConverter`/`@TypeConverters` as `@experimental`, which is
+    # the documented way of storing DateTime columns. The warnings are noise.
+    experimental_member_use: ignore
